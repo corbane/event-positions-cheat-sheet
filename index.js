@@ -42,6 +42,8 @@ document.addEventListener ("DOMContentLoaded", () =>
         if (interactive) toggleMode ()
     }
 
+    document.getElementById ("sidebar").addEventListener ("click", evt => evt.stopImmediatePropagation ())
+
     const clientX = document.getElementById("clientX")
     const clientY = document.getElementById("clientY")
     const offsetX = document.getElementById("offsetX")
