@@ -123,6 +123,37 @@
             top: -20px;
             right: calc(-100% + 8px);
         }
+        
+    .ribbon{
+        z-index: 10;
+        position: fixed; 
+        top: 10px;
+        width: 100px;
+        padding: 1px 0;
+        background: #000;
+        color: #eee;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .ribbon.right{
+        right: -26px;
+        transform: rotate(45deg);
+    }
+    .ribbon a, .ribbon a:visited,  .ribbon a:active, .ribbon a:hover {
+        display: block;
+        padding: 1px 0;
+        height: 24px;
+        line-height: 24px;
+
+        color: inherit;  
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Cabin Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+
+        border: 1px solid rgba(255,255,255,0.3);
+        text-shadow: 0 0 10px rgba(0,0,0,0.31);
+    }
     </style>
 </head>
 
@@ -130,7 +161,6 @@
     <div id="ruleY"></div>
 
 <body>
-
 
     <main>
         <div>
@@ -215,5 +245,8 @@
     </template>
 
     <script src="./index.js"></script>
+    
+    <div id="ribbon" class="ribbon right"><a href="https://github.com/corbane/event-positions-cheat-sheet" >GitHub</a></div>
+
 </body>
 </html>
